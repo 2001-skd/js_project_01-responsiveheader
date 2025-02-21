@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header With No Submenu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo_container">
+        <p class="logoname">LogoName</p>
+      </div>
+
+      <nav class="desktop_nav">
+        <a href="#" class="navlink">Home</a>
+        <a href="#" class="navlink">About Us</a>
+        <a href="#" class="navlink">Services</a>
+        <a href="#" class="navlink">Products</a>
+      </nav>
+      <button
+        class="open_btn"
+        id="open_btn"
+        aria-label="open mobile menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- mobile navigation starts -->
+    <nav class="mobile_nav" id="mobile_nav">
+      <div
+        class="close_btn"
+        id="close_btn"
+        aria-label="close mobile menu"
+        aria-expanded="false"
+        aria-hidden="true"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <a href="#" class="navlink">Home</a>
+      <a href="#" class="navlink">About Us</a>
+      <a href="#" class="navlink">Services</a>
+      <a href="#" class="navlink">Products</a>
+    </nav>
+    <!-- mobile navigation ends -->
+    <!-- script starts -->
+    <script src="script.js"></script>
+    <!-- script ends -->
+  </body>
+</html>
